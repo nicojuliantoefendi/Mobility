@@ -1,0 +1,52 @@
+<ion-modal-view class="product edit create">
+  <form name="itemEdit" novalidate>
+	<ion-header-bar class="bar-positive fix-buttons">
+	  <a class="button" ng-click="closeModal()">Cancel</a>
+	  <h1 class="title">Form</h1>
+	</ion-header-bar>
+	<ion-content has-bouncing="true">
+	  <div class="row" ng-class="{'no-padding-top': !data.editItem}">
+		<div class="col">
+		  <label class="item item-input large">
+			<input type="text" placeholder="Name" ng-model="trip.Name">
+		  </label>
+		</div>
+	  </div>
+
+	  <div class="row">
+		<div class="col">
+		  <label class="item item-input large">Start Date</label>
+		  <label class="item item-input large">
+			<input type="date" placeholder="Start Date" ng-model="trip.Start_date">
+		  </label>
+		</div>
+		<div class="col">
+		  <label class="item item-input large">End Date</label>
+		  <label class="item item-input large">
+			<input type="date" placeholder="End Date" ng-model="trip.End_date">
+		  </label>
+		</div>
+	  </div>
+	  <div class="row description-row">
+		<div class="col">
+		  <label class="item item-input text">
+			<textarea placeholder="Description" rows="5" ng-model="trip.Description" ng-Required="true" name="description" lose-focus-on-return></textarea>
+		  </label>
+		</div>
+	  </div>
+
+	  <div class="row charity-row">
+		<div class="col col-10 vert-center">
+		  <div class="charity large"></div>
+		</div>
+	  </div>
+	
+	<div class="padding">
+		<button class="button button-block button-positive" ng-click="save(trip)">
+		  Save
+		</button>
+	</div>
+
+	</ion-content>
+  </form>
+</ion-modal-view>

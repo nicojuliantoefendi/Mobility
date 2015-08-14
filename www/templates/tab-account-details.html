@@ -1,0 +1,98 @@
+<ion-view view-title="Account Details">
+  <ion-nav-bar>
+	<ion-nav-buttons side="right">
+      <button class="button colorEnergized">
+		Edit
+      </button>
+    </ion-nav-buttons>
+	<ion-nav-buttons side="left">
+      <button class="button colorEnergized">
+		<i class="ion-arrow-left-c"></i> My Account
+      </button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <br />
+  <ion-content class="bar-stable">
+	  <div class="col text-center">
+		Home
+		<br />
+		<img ng-src="img/home.PNG">
+	  </div>
+	  <div class="row">
+		<div class="col headerSection">
+			ACCOUNT
+		</div>
+	  </div>
+	  <ion-list>
+		<ion-item>
+			<div class="row">
+				<div class="col col-50">
+					Account Number
+				</div>
+				<div class="col col-50 text-right">
+					3451223
+				</div>
+			</div>
+		</ion-item>
+		<ion-item>
+			<div class="row" disabled="true">
+				<div class="col col-50">
+					Name on Account
+				</div>
+				<div class="col col-50 text-right">
+					Amy E James
+				</div>
+			</div>
+		</ion-item>
+		<ion-item>
+			<div class="row">
+				<div class="col col-50">
+					Phone Number
+				</div>
+				<div class="col col-50 text-right">
+					07802 474311
+				</div>
+			</div>
+		</ion-item>
+		<ion-item>
+			<div class="row">
+				<div class="col col-50">
+					Email address
+				</div>
+				<div class="col col-50 text-right">
+					amy@amy.co.uk
+				</div>
+			</div>
+		</ion-item>
+	  </ion-list>
+	  
+	  <div class="row">
+		<div class="col headerSection">
+			ACCOUNT ADDRESS
+		</div>
+	  </div>
+	  
+	  <div class="item">
+		<div class="row">
+			401 West Georgia Street
+		</div>
+		<div class="row">
+			Vancouver
+		</div>
+		<div class="row">
+			V6B 5A1
+		</div>
+	  </div>
+	  <br />
+	  <div class="item">
+		<div class="row">
+			<div class="col col-50">
+				Go paperless with e-bill
+			</div>
+			<div class="col col-50 text-right" onclick="changeIconColor()">
+				<i class="ion-checkmark-circled colorEnergized bigIcon"></i>
+			</div>
+		</div>
+	  </div>
+  </ion-content>
+</ion-view>
