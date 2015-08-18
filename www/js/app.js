@@ -21,14 +21,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','l
       StatusBar.styleLightContent();
     }
 	
-	User.getCurrent(function(res){
-		console.log(res);
-		if(res!=undefined)
-			$state.go('tab.dash');
-		else
-			$location.path('/login');
-	});
-	
   });
 })
 
@@ -49,38 +41,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','l
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-
-  .state('login', {
-      url: '/login',
-      templateUrl: 'templates/login.html',
-      controller: 'LoginCtrl'
-    })
   
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
-  })
-  
-  .state('tab.trips', {
-    url: '/trips',
-    views: {
-      'tab-trips': {
-        templateUrl: 'templates/tab-trips.html',
-        controller: 'TripCtrl'
-      }
-    }
-  })
-  
-  .state('tab.account_details', {
-    url: '/account_details',
-    views: {
-      'tab-account-details': {
-        templateUrl: 'templates/tab-account-details.html',
-        controller: 'AccountDetailsCtrl'
-      }
-    }
   })
 
   // Each tab has its own nav history stack:
@@ -125,6 +91,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','l
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/login');
+  $urlRouterProvider.otherwise('/tab/dash');
 
 });
