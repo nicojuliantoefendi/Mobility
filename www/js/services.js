@@ -45,6 +45,11 @@ angular.module('starter.services', [])
         }
       }
       return null;
-    }
+    },
+	change: function(chatId) {
+	  if (chats[chatId].id === parseInt(chatId)) {
+		chats[chatId].lastText= 'Changed!';
+	  }
+	}
   };
 });
