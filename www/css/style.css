@@ -1,1 +1,126 @@
 /* Empty. Add your own CSS if you like */
+
+/*------ Global CSS ------*/
+.pane{
+	background-color: #f8f8f8;
+}
+
+.header-section{
+	font-size: 16px;
+	color: #ffc900;
+	font-weight: bold;
+}
+
+.big-icon{
+	font-size: 20px;
+}
+
+/*------ Start of Energy Usage ------*/
+
+/*----- Tabs -----*/
+
+.tabs {
+    width:100%;
+    display:inline-block;
+	position: relative;
+	line-height: inherit;
+	border-style: none;
+	background-color: none;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+		text-align: center;
+		width: 25%;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#f8f8f8;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background:#fff;
+        color:#4D4C8B;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }
+		
+
+
+.energy-usage-header{
+	padding-left: 10px;
+}
+
+.energy-usage-footer-header{
+	font-weight: bold
+}
+
+.energy-usage-footer{
+	background: #fff;
+	border-radius: 3px;
+	padding: 15px;
+}
+
+.footer-tip{
+	padding-left: 10px;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	max-height: 100px;
+}
+
+.achievement{
+	width: 25%;
+	text-align: center;
+}
+
+.achievement.active{
+	width: 25%;
+	text-align: center;
+	color:#4D4C8B;
+}
+
+.achievement a:hover {
+	background:#a7cce5;
+	text-decoration:none;
+}
+
+/*----- End of Energy Usage ------*/
