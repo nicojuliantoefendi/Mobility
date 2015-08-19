@@ -5,7 +5,7 @@
 	background-color: #f8f8f8;
 }
 
-.header-section{
+.header-title{
 	font-size: 16px;
 	color: #ffc900;
 	font-weight: bold;
@@ -15,11 +15,18 @@
 	font-size: 20px;
 }
 
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	max-height: 100px;
+}
+
 /*------ Start of Energy Usage ------*/
 
 /*----- Tabs -----*/
 
-.tabs {
+.energy-usage-tabs {
     width:100%;
     display:inline-block;
 	position: relative;
@@ -30,20 +37,20 @@
  
     /*----- Tab Links -----*/
     /* Clearfix */
-    .tab-links:after {
+    .energy-usage-tab-links:after {
         display:block;
         clear:both;
         content:'';
     }
  
-    .tab-links li {
+    .energy-usage-tab-links li {
 		text-align: center;
 		width: 25%;
         float:left;
         list-style:none;
     }
  
-        .tab-links a {
+        .energy-usage-tab-links a {
             padding:9px 15px;
             display:inline-block;
             border-radius:3px 3px 0px 0px;
@@ -54,7 +61,7 @@
             transition:all linear 0.15s;
         }
  
-        .tab-links a:hover {
+        .energy-usage-tab-links a:hover {
             background:#a7cce5;
             text-decoration:none;
         }
@@ -65,18 +72,18 @@
     }
  
     /*----- Content of Tabs -----*/
-    .tab-content {
+    .energy-usage-tab-content {
         padding:15px;
         border-radius:3px;
         box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
         background:#fff;
     }
  
-        .tab {
+        .energy-usage-tab {
             display:none;
         }
  
-        .tab.active {
+        .energy-usage-tab.active {
             display:block;
         }
 		
@@ -96,29 +103,23 @@
 	padding: 15px;
 }
 
-.footer-tip{
+.energy-usage-footer-tip{
 	padding-left: 10px;
 }
 
-img.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-	max-height: 100px;
-}
-
-.achievement{
+.energy-usage-achievement{
 	width: 25%;
 	text-align: center;
+	color: #4c4c4c;
 }
 
-.achievement.active{
+.energy-usage-achievement.active{
 	width: 25%;
 	text-align: center;
 	color:#4D4C8B;
 }
 
-.achievement a:hover {
+.energy-usage-achievement a:hover {
 	background:#a7cce5;
 	text-decoration:none;
 }

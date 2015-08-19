@@ -5,42 +5,58 @@
 				This billing period, you have spent:
 			</div>
 			<div class="row">
-				<div class="header-section">
+				<div class="header-title">
 					$32.46
 				</div>
 			</div>
 		</div>
 		
 		<div class="row">
-			<div class="tabs">
-				<ul class="tab-links">
-					<li class="active"><a href="#tab1" ng-click="reloadChart(1)"><i class="ion-social-usd big-icon"></i></a></li>
-					<li><a href="#tab2" ng-click="reloadChart(2)"><i class="ion-stats-bars big-icon"></i></a></li>
-					<li><a href="#tab3" ng-click="reloadChart(3)"><i class="ion-ios-lightbulb-outline big-icon"></i><i class="ion-android-bicycle big-icon"></i></a></li>
-					<li><a href="#tab4"><i class="ion-stats-bars big-icon"></i></a></li>
+			<div class="energy-usage-tabs">
+				<ul class="energy-usage-tab-links">
+					<li class="active">
+						<a href="#tab1" ng-click="reloadChart(1)"><i class="ion-social-usd big-icon"></i></a>
+					</li>
+					<li>
+						<a href="#tab2" ng-click="reloadChart(2)"><i class="ion-stats-bars big-icon"></i></a>
+					</li>
+					<li>
+						<a href="#tab3" ng-click="reloadChart(3)">
+							<i class="ion-ios-lightbulb-outline big-icon"></i>
+							<i class="ion-android-bicycle big-icon"></i>
+						</a>
+					</li>
 				</ul>
 			 
-				<div class="tab-content">
-					<div id="tab1" class="tab active">
+				<div class="energy-usage-tab-content">
+					<div id="tab1" class="energy-usage-tab active">
 						<div> Based on your usage so far we have predicted the balance of your next bill </div>
 						<div id="donutchart"></div>
 					</div>
 			 
-					<div id="tab2" class="tab">
+					<div id="tab2" class="energy-usage-tab">
 						<div id="chart_div"></div>
 					</div>
 			 
-					<div id="tab3" class="tab">
+					<div id="tab3" class="energy-usage-tab">
 						<div> So far for this billing period, you could have lit: </div>
 						<div class="row" ng-model="achievement">
 							<img class="center" ng-src="img/{{achievement.pic}}">
 						</div>
 						<br />
 						<div class="row">
-							<a href="#achievement1" ng-click="reloadAchievement(1)" class="col-25 achievement"><i class="ion-ios-lightbulb-outline big-icon"></i></a>
-							<a href="#achievement2" ng-click="reloadAchievement(2)" class="col-25 achievement"><i class="ion-cloud big-icon"></i></a>
-							<a href="#achievement3" ng-click="reloadAchievement(3)" class="col-25 achievement"><i class="ion-leaf big-icon"></i></a>
-							<a href="#achievement4" ng-click="reloadAchievement(4)" class="col-25 achievement"><i class="ion-android-bicycle big-icon"></i></a>
+							<a href="#achievement1" ng-click="reloadAchievement(1)" class="col-25 energy-usage-achievement active">
+								<i class="ion-ios-lightbulb-outline big-icon"></i>
+							</a>
+							<a href="#achievement2" ng-click="reloadAchievement(2)" class="col-25 energy-usage-achievement">
+								<i class="ion-cloud big-icon"></i>
+							</a>
+							<a href="#achievement3" ng-click="reloadAchievement(3)" class="col-25 energy-usage-achievement">
+								<i class="ion-leaf big-icon"></i>
+							</a>
+							<a href="#achievement4" ng-click="reloadAchievement(4)" class="col-25 energy-usage-achievement">
+								<i class="ion-android-bicycle big-icon"></i>
+							</a>
 						</div>
 					</div>
 			 
@@ -57,7 +73,7 @@
 						<div class="col-40">
 							<img style="width:100%;max-width:100px" ng-src="img/{{tip.pic}}">
 						</div>
-						<div class="col-60 footer-tip">
+						<div class="col-60 energy-usage-footer-tip">
 							<div class="energy-usage-footer-header">
 								{{tip.header}}
 							</div>

@@ -116,14 +116,22 @@ angular.module('starter.controllers', [])
 	}
 	
 	angular.element(document).ready(function() {
-		angular.element('.tabs .tab-links a').on('click', function(e)  {
+		angular.element('.energy-usage-tabs .energy-usage-tab-links a').on('click', function(e)  {
 			var currentAttrValue = angular.element(this).attr('href');
 	 
 			// Show/Hide Tabs
-			angular.element('.tabs ' + currentAttrValue).show().siblings().hide();
+			angular.element('.energy-usage-tabs ' + currentAttrValue).show().siblings().hide();
 	 
 			// Change/remove current tab to active
 			angular.element(this).parent('li').addClass('active').siblings().removeClass('active');
+	 
+			e.preventDefault();
+		});
+		
+		angular.element('.energy-usage-achievement').on('click', function(e)  {
+	 
+			// Change/remove current tab to active
+			angular.element(this).addClass('active').siblings().removeClass('active');
 	 
 			e.preventDefault();
 		});
