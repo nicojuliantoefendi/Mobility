@@ -48,6 +48,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','l
     controller: 'EnergyUsageCtrl'
   })
   
+  .state('bills', {
+	url: '/bills',
+	templateUrl: 'templates/bills.html',
+	controller: 'BillsCtrl'
+	})
+  
   // setup an abstract state for the tabs directive
     .state('tab', {
     url: '/tab',
